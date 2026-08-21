@@ -293,13 +293,25 @@ main {
   margin-top: 24px;
 }
 /*SERVIÇOS*/
-.servicos {
-  background: var(--preto);
-  color: var(--branco);
+.servico-card {
+  min-height: 280px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--borda-arredondada);
+  background: var(--preto-suave);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
-.servicos .secao-cabecalho > p:last-child,
-.servicos .servico-card > p:not(.servico-numero) {
-  color: #a7a7a7;
+.servico-card:hover {
+  border-color: #ff6418;
+  box-shadow: 0 0 0 3px rgba(255, 100, 24, 0.16);
+  transform: translateY(-6px);
+}
+.servico-card:has(.servico-toggle:focus-visible) {
+  border-color: #ff6418;
+  box-shadow: 0 0 0 3px rgb(255, 101, 24);
 }
 .servicos-lista {
   width: 100%;
@@ -307,23 +319,74 @@ main {
   margin: 0 auto 48px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-border: 1px solid rgba(255, 255, 255, 0.55);}
-.servico-card {
-  min-height: 250px;
+  gap: 24px;
+  align-items: start;
+}
+.servico-toggle {
+  width: 100%;
   padding: 30px 28px;
-  border-right: 1px solid rgba(255, 255, 255, 0.18);
-}
-.servico-card:first-child {
-  border-left: 1px solid rgba(254, 31, 31, 0.18);
-}
-.servicos > .link-secao {
   display: flex;
-  width: max-content;
-  max-width: var(--largura-maxima);
-  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  background: none;
+  border: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
 }
-.servicos .link-secao:hover {
-  color: var(--cor-destaque);
+
+.servico-seta {
+  position: absolute;
+  top: 28px;
+  right: 24px;
+  font-size: 1.4rem;
+  color: var(--laranja);
+  transition: transform 0.3s ease;
+}
+
+.servico-card.aberto .servico-seta {
+  transform: rotate(45deg); /* + vira x */
+}
+
+.servico-detalhes {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 28px;
+
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.servico-card.aberto .servico-detalhes {
+  max-height: 600px; /* valor alto o suficiente para caber o conteúdo */
+  padding: 0 28px 30px;
+}
+.servico-preco {
+  margin-top: 4px;
+  color: var(--laranja);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.servico-detalhes h4 {
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+.servico-detalhes ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  color: var(--cinza);
+}
+.servico-aviso {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--cinza);
+}
+.servico-detalhes .botao {
+  margin-top: 24px;
 }
 /*SOBRE*/
 .sobre {
@@ -438,6 +501,9 @@ border: 1px solid rgba(255, 255, 255, 0.55);}
     border-left: 1px solid rgba(255, 255, 255, 0.18);
     border-right: 1px solid rgba(255, 255, 255, 0.18);
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+    .servicos-lista {
+    grid-template-columns: 1fr;
   }
   .sobre {
     grid-template-columns: 1fr;
