@@ -226,6 +226,27 @@ main {
   object-fit: cover;
   border-radius: var(--borda-arredondada);
 }
+.link-secao {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #f4f1ec; /* ou a cor que você já usa no portfólio */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.link-secao:hover {
+  color: #f4f1ec;
+}
+
+.link-secao svg {
+  transition: transform 0.3s ease;
+}
+
+.link-secao:hover svg {
+  transform: translate(4px, -4px);
+}
 /*PROJETOS*/
 .projetos {
   background: var(--off-white);
@@ -329,7 +350,6 @@ main {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-
   background: none;
   border: none;
   color: inherit;
@@ -337,7 +357,6 @@ main {
   cursor: pointer;
   position: relative;
 }
-
 .servico-seta {
   position: absolute;
   top: 28px;
@@ -346,11 +365,9 @@ main {
   color: var(--laranja);
   transition: transform 0.3s ease;
 }
-
 .servico-card.aberto .servico-seta {
   transform: rotate(45deg); /* + vira x */
 }
-
 .servico-detalhes {
   max-height: 0;
   overflow: hidden;
@@ -358,7 +375,6 @@ main {
 
   transition: max-height 0.4s ease, padding 0.4s ease;
 }
-
 .servico-card.aberto .servico-detalhes {
   max-height: 600px; /* valor alto o suficiente para caber o conteúdo */
   padding: 0 28px 30px;
@@ -480,6 +496,22 @@ main {
   color: #929292;
   text-align: center;
   font-size: 0.82rem;
+}
+/* Animação de entrada das seções */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+section.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Garante que a primeira seção já apareça sem delay */
+section.visivel,
+#inicio {
+  opacity: 1;
+  transform: translateY(0);
 }
 /*RESPONSIVIDADE*/
 @media (max-width: 900px) {
