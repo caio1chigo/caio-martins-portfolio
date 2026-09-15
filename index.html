@@ -4,23 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Caio Martins | Web Designer</title>
+  <title>Gran Rey Cero Studio | Web Design & Development</title>
+  <style>
+    @font-face {
+      font-family:'Saved' ;
+      src:url('Saved by Zero Rg.otf') format('opentype');
+      font-weight: normal;
+    font-style: normal;}
+
+  </style>
 
   <meta
     name="description"
     content="Caio Martins é Web Designer e desenvolvedor web. Criação de sites institucionais, landing pages e catálogos digitais."
   >
-
+<link rel="icon" href="android-chrome-192x192.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- Loader -->
+  <div id="loader" aria-hidden="true">
+    <div class="flash-diagonal"></div>
+
+    <div class="logo-wrapper">
+      <img src="noir.jpg" alt="" class="logo-base">
+      <img src="color.jpg" alt="" class="logo-color">
+    </div>
+  </div>
+
+  <!-- Cabeçalho fixo -->
   <header class="cabecalho">
     <a href="#inicio" class="logo" aria-label="Ir para o início">
       Caio Martins<span>.</span>
     </a>
 
     <nav class="navegacao" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
       <a href="#projetos">Projetos</a>
       <a href="#servicos">Serviços</a>
       <a href="#sobre">Sobre</a>
@@ -29,287 +49,527 @@
   </header>
 
   <main>
-    <section class="hero" id="inicio">
-      <div class="hero-texto">
-        <p class="etiqueta">WEB DESIGNER & DESENVOLVEDOR WEB</p>
+    
+    <a
+  class="botao-whatsapp-flutuante"
+  href="https://wa.me/556182118809?text=Ol%C3%A1%2C%20Caio%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20falar%20sobre%20um%20projeto."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Falar com Caio pelo WhatsApp">
+  <span aria-hidden="true">☏</span>
+  <span>WhatsApp</span>
+</a>
+    <!-- Capa -->
+    <section id="inicio" class="secao-capa" aria-labelledby="titulo-capa">
+      <img
+        src="capa-definitiva.jpeg"
+        alt=""
+        class="capa-fundo"
+      >
 
-        <h1>
-          Caio Martins,<br>
-          <span>Web Designer.</span>
-        </h1>
+      <div class="capa-sobreposicao" aria-hidden="true"></div>
 
-        <p class="hero-descricao">
-          Crio sites modernos, responsivos e estratégicos
-          para pequenos negócios se destacarem na internet.
+    <div class="capa-conteudo">
+  <div class="capa-textos">
+    <p class="capa-marca">Gran Rey Cero</p>
+
+    <h1 id="titulo-capa" class="capa-studio">
+      Studio
+    </h1>
+
+    <p class="capa-subtitulo">
+      Web Design &amp; Development
+    </p>
+  </div>
+</div>
+    </section>
+
+    <!-- Soluções -->
+    <section
+      id="solucoes"
+      class="secao-transicao"
+      aria-labelledby="titulo-solucoes"
+    >
+      <div class="solucoes-mensagem">
+        <p class="solucoes-etiqueta">O que podemos construir</p>
+
+        <h2 id="titulo-solucoes">
+Sites pensados para tornar seu negócio mais claro, confiável e fácil de escolher.</h2>
+
+<p class="solucoes-descricao">
+Landing pages, sites institucionais e catálogos digitais e serviços de automação feitos para apresentar o que você oferece e facilitar o próximo contato.</p>
+      </div>
+
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="secao projetos">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">PROJETOS SELECIONADOS</p>
+        <h2>
+Design que organiza a mensagem e conduz à próxima ação.
+
+        </h2>
+        <p>
+       Cada projeto combina estrutura, direção visual e desenvolvimento responsivo para ajudar marcas e pequenos negócios a se apresentarem melhor online.
         </p>
+      </div>
 
-        <div class="hero-botoes">
-          <a href="#projetos" class="botao botao-principal">
-            Ver projetos
-          </a>
+      <div
+        class="projetos-carrossel"
+        aria-label="Projetos selecionados"
+      >
+        <article id="projeto-01" class="projeto-card">
+          <div class="projeto-moldura">
+            <div class="preview-wrapper">
+              <img
+                src="Captura de tela 2026-09-14 192338.png"
+                alt="Prévia do projeto de site para uma clínica"
+                class="projeto-imagem"
+              >
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <p class="projeto-numero">01 / 03</p>
+            <h3>Clínica Sorria</h3>
+            <p class="projeto-descricao">
+              Landing Page focada em conversão, criada para apresentar serviços e facilitar o
+              agendamento de novos pacientes.
+            </p>
+            <a
+              href="https://caio1chigo.github.io/prompt-dentista/"
+              class="link-projeto"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver projeto
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
 
-          <a href="#contato" class="botao botao-secundario">
-            Entrar em contato
-          </a>
+        <article id="projeto-02" class="projeto-card">
+          <div class="projeto-moldura">
+            <div class="preview-wrapper">
+              <img
+                src="Captura de tela 2026-09-14 192551.png"
+                alt="Prévia do projeto de site para uma marca de moda"
+                class="projeto-imagem"
+              >
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <p class="projeto-numero">02 / 03</p>
+            <h3>HG Clínica</h3>
+            <p class="projeto-descricao">
+             Site institucional para negócios, desenvolvido para organizar informações, transmitir confiança e mostrar aos pacientes como iniciar o atendimento.
+            </p>
+            <a
+              href="https://caio1chigo.github.io/template-2/"
+              class="link-projeto"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver projeto
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article id="projeto-03" class="projeto-card">
+          <div class="projeto-moldura">
+            <div class="preview-wrapper">
+              <img
+                src="Captura de tela 2026-09-14 192819.png"
+                alt="Prévia do projeto de site para um negócio local"
+                class="projeto-imagem"
+              >
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <p class="projeto-numero">03 / 03</p>
+            <h3>M.H Lux</h3>
+            <p class="projeto-descricao">
+             Catálogo digital para marca, criado para destacar produtos, apresentar a identidade da marca e facilitar o contato de pessoas interessadas.
+            </p>
+            <a
+              href="https://caio1chigo.github.io/m.h-lux/"
+              class="link-projeto"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver projeto
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="projetos-indicadores" aria-label="Navegação dos projetos">
+        <button
+          class="projeto-indicador ativo"
+          type="button"
+          data-projeto="projeto-01"
+          aria-label="Mostrar projeto 1"
+          aria-current="true"
+        ></button>
+        <button
+          class="projeto-indicador"
+          type="button"
+          data-projeto="projeto-02"
+          aria-label="Mostrar projeto 2"
+        ></button>
+        <button
+          class="projeto-indicador"
+          type="button"
+          data-projeto="projeto-03"
+          aria-label="Mostrar projeto 3"
+        ></button>
+      </div>
+    </section>
+
+   <!-- Serviços -->
+<section id="servicos" class="secao secao-servicos-gta">
+  <div class="servicos-cabecalho">
+    <p class="etiqueta">O QUE FAZEMOS</p>
+
+    <h2>
+Estruturas digitais para negócios que precisam ser encontrados, entendidos e lembrados.</h2>
+
+  <p>Escolha o formato que melhor atende ao seu momento: uma página focada em conversão, um site completo para apresentar sua empresa ou um catálogo digital para organizar produtos e serviços.</p>
+  </div>
+
+  <!-- Carrossel externo dos serviços -->
+  <div
+    class="gta-carousel"
+    id="gta-carousel"
+    aria-label="Serviços oferecidos"
+  >
+    <div class="gta-trilho" id="gta-trilho">
+
+      <!-- Serviço 01 -->
+      <article
+        class="gta-card"
+        data-servico="landing"
+        tabindex="0"
+        aria-label="Abrir serviço de Landing Pages"
+      >
+        <!-- Estado fechado: primeira imagem -->
+        <div class="gta-card-fechado">
+          <img
+            src="landing-page.jpg"
+            alt="Arte da edição Ultimate de uma landing page"
+            class="gta-card-capa"
+          >
+
+          <div class="gta-card-fechado-overlay">
+            <p class="gta-card-marca">PÁGINA</p>
+            <h3>LANDING PAGE</h3>
+            <span>Saiba mais <span aria-hidden="true">→</span></span>
+          </div>
         </div>
-      </div>
 
-      <div class="hero-imagem">
-        <img
-          src="foto-portfolio.jpg"
-          alt="Caio Martins, Web Designer"
-        >
-      </div>
-    </section>
+        <!-- Estado aberto: painéis navegáveis horizontalmente -->
+        <div class="gta-card-aberto" aria-hidden="true">
+          <div class="gta-card-viewport">
+            <div class="gta-card-paineis">
 
-    <section class="projetos secao" id="projetos">
-      <div class="secao-cabecalho">
-  <p class="etiqueta">PROJETOS</p>
-  <h2>Meus projetos.</h2>
+              <!-- Painel 01: segunda imagem -->
+              <section class="gta-painel gta-painel-boas-vindas">
+                <button
+                  type="button"
+                  class="gta-botao-voltar"
+                  aria-label="Voltar para o card fechado"
+                >
+                  <span aria-hidden="true">←</span>
+                  Voltar
+                </button>
+
+                <div class="gta-painel-imagem">
+                  <img
+                    src="pin-tattoo.jpg"
+                    alt="Demonstração de landing page com dois personagens"
+                  >
+                </div>
+
+                <div class="gta-painel-conteudo">
+                  <p class="gta-painel-label">Landing Pages</p>
+
+                  <h3>
+                    Estrutura para apresentar uma oferta, destacar seus diferenciais e facilitar o primeiro contato.
+                  </h3>
+
+                  <p>
+                   Landing pages são criadas para reduzir distrações, explicar uma oferta com clareza e orientar o visitante até uma ação — solicitar um orçamento, chamar no WhatsApp ou se inscrever em uma campanha.
+                </div>
+              </section>
+
+              <!-- Painel 02: terceira imagem -->
+              <section class="gta-painel gta-painel-detalhe">
+                <button
+                  type="button"
+                  class="gta-botao-voltar"
+                  aria-label="Voltar para o card fechado"
+                >
+                  <span aria-hidden="true">←</span>
+                  Voltar
+                </button>
+
+                <div class="gta-painel-conteudo">
+                  <p class="gta-painel-label">Estrutura e conversão</p>
+
+                  <h3>
+                    Página de campanha
+                  </h3>
+
+                  <p>
+                    Conteúdo organizado para explicar uma solução e mostrar ao visitante por que ela pode ser adequada para o seu negócio.</p>
+                </div>
+
+                <div class="gta-painel-imagem gta-painel-imagem-direita">
+                  <img
+                    src="pin-tattoo2.jpg"
+                    alt="Detalhe visual de uma landing page para campanha"
+                  >
+                </div>
+              </section>
+
+            </div>
+          </div>
+
+          <div class="gta-progresso" aria-hidden="true">
+            <span class="gta-progresso-atual"></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Serviço 02 -->
+      <article
+        class="gta-card"
+        data-servico="institucional"
+        tabindex="0"
+        aria-label="Abrir serviço de Sites Institucionais"
+      >
+        <div class="gta-card-fechado">
+          <img
+            src="site-institucional.jpg"
+            alt="Arte conceitual de um site institucional"
+            class="gta-card-capa"
+          >
+
+          <div class="gta-card-fechado-overlay">
+            <p class="gta-card-marca">SITE</p>
+            <h3>INSTITUCIONAL</h3>
+            <span>Saiba mais <span aria-hidden="true">→</span></span>
+          </div>
+        </div>
+
+        <div class="gta-card-aberto" aria-hidden="true">
+          <div class="gta-card-viewport">
+            <div class="gta-card-paineis">
+              <section class="gta-painel">
+                <button
+                  type="button"
+                  class="gta-botao-voltar"
+                  aria-label="Voltar para o card fechado"
+                >
+                  <span aria-hidden="true">←</span>
+                  Voltar
+                </button>
+
+                <div class="gta-painel-imagem">
+                  <img
+                    src="pin-insti.jpg"
+                    alt="Site institucional em uma tela de computador"
+                  >
+                </div>
+
+                <div class="gta-painel-conteudo">
+                  <p class="gta-painel-label">Sites Institucionais</p>
+
+                  <h3>
+                 Estrutura que apresenta soluções, diferenciais e informações relevantes sem sobrecarregar o visitante.
+
+
+                  </h3>
+
+                  <p>
+                   Um site institucional organiza as informações mais importantes da sua empresa em uma experiência profissional, responsiva e fácil de navegar — desde a primeira visita até o contato.
+
+
+                  </p>
+                </div>
+              </section>
+
+              <section class="gta-painel gta-painel-detalhe">
+                <button
+                  type="button"
+                  class="gta-botao-voltar"
+                  aria-label="Voltar para o card fechado"
+                >
+                  <span aria-hidden="true">←</span>
+                  Voltar
+                </button>
+
+                <div class="gta-painel-conteudo">
+                  <p class="gta-painel-label">Credibilidade</p>
+
+                  <h3>
+                    Sua empresa apresentada com clareza.
+                  </h3>
+
+                  <p>
+                   Uma entrada clara para explicar quem é a empresa, o que ela oferece e por que alguém deveria continuar conhecendo o negócio.
+                  </p>
+                </div>
+
+                <div class="gta-painel-imagem gta-painel-imagem-direita">
+                  <img
+                    src="pin-insti2.jpg"
+                    alt="Detalhe de um site institucional"
+                  >
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Serviço 03 -->
+      <article
+        class="gta-card"
+        data-servico="catalogo"
+        tabindex="0"
+        aria-label="Abrir serviço de Catálogos Digitais"
+      >
+        <div class="gta-card-fechado">
+          <img
+            src="site-catalogo.jpg"
+            alt="Arte conceitual de um catálogo digital"
+            class="gta-card-capa"
+          >
+
+          <div class="gta-card-fechado-overlay">
+            <p class="gta-card-marca">PÁGINA</p>
+            <h3>DIGITAL CATALOG</h3>
+            <span>Saiba mais <span aria-hidden="true">→</span></span>
+          </div>
+        </div>
+
+        <div class="gta-card-aberto" aria-hidden="true">
+          <div class="gta-card-viewport">
+            <div class="gta-card-paineis">
+              <section class="gta-painel">
+                <button
+                  type="button"
+                  class="gta-botao-voltar"
+                  aria-label="Voltar para o card fechado"
+                >
+                  <span aria-hidden="true">←</span>
+                  Voltar
+                </button>
+
+                <div class="gta-painel-imagem">
+                  <img
+                    src="pin-catalog.jpg"
+                    alt="Catálogo digital com produtos organizados"
+                  >
+                </div>
+
+                <div class="gta-painel-conteudo">
+                  <p class="gta-painel-label">Catálogos Digitais</p>
+
+                  <h3>Mais clareza para apresentar o que você oferece.</h3>
+
+                  <p>
+                    Um catálogo digital funciona como uma vitrine organizada: reúne produtos, categorias, detalhes e formas de contato sem exigir a estrutura completa de uma loja virtual.
+                  </p>
+                </div>
+              </section>
+
+              <section class="gta-painel gta-painel-detalhe">
+                <button
+                  type="button"
+                  class="gta-botao-voltar"
+                  aria-label="Voltar para o card fechado"
+                >
+                  <span aria-hidden="true">←</span>
+                  Voltar
+                </button>
+
+                <div class="gta-painel-conteudo">
+                  <p class="gta-painel-label">Organização</p>
+
+                  <h3>Uma apresentação visual para destacar itens, categorias e informações essenciais.</h3>
+
+                  <p>
+                    Uma forma simples de apresentar opções, explicar diferenças e facilitar pedidos de informação.
+                  </p>
+                </div>
+
+                <div class="gta-painel-imagem gta-painel-imagem-direita">
+                  <img
+                    src="pin-catalog2.jpg"
+                    alt="Detalhe de catálogo digital"
+                  >
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  <div class="servicos-cta">
   <p>
-    Sites reais entregues para clientes reais.
+    Já sabe qual estrutura seu negócio precisa?
   </p>
+  <a
+    href="https://wa.me/556182118809?text=Ol%C3%A1%2C%20Caio%21%20Quero%20solicitar%20um%20or%C3%A7amento%20para%20meu%20neg%C3%B3cio."
+    class="botao botao-orcamento"
+    target="_blank"
+    rel="noopener noreferrer">Solicitar orçamento<span aria-hidden="true">↗</span>
+  </a>
 </div>
-<div class="projetos-lista">
-
-  <article class="projeto-card">
-    <div class="projeto-imagem">
-      <div class="preview-wrapper">
-        <iframe
-          src="https://caio1chigo.github.io/prompt-dentista/"
-          loading="lazy"
-          title="Prévia do site para uma clínica odontológica"
-          class="preview-iframe"
-        ></iframe>
-
-      <a
-  href="https://caio1chigo.github.io/prompt-dentista/"
-  class="link-projeto"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Ver projeto <span aria-hidden="true">↗</span>
-</a>
-      </div>
-    </div>
-
-    <div class="projeto-conteudo">
-      <p class="projeto-numero">01</p>
-      <h3>Clínica odontológica</h3>
-      <p>
-        Site institucional responsivo criado para apresentar
-        os serviços, a equipe e os canais de atendimento da clínica.
-      </p>
-    </div>
-  </article>
-
-  <article class="projeto-card">
-    <div class="projeto-imagem">
-      <div class="preview-wrapper">
-        <iframe
-          src="https://caio1chigo.github.io/m.h-lux/"
-          loading="lazy"
-          title="Prévia do catálogo digital"
-          class="preview-iframe"
-        ></iframe>
-
-<a
-  href="https://caio1chigo.github.io/m.h-lux/"
-  class="link-projeto"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Ver projeto <span aria-hidden="true">↗</span>
-</a>
-      </div>
-    </div>
-
-    <div class="projeto-conteudo">
-      <p class="projeto-numero">02</p>
-      <h3>Catálogo digital</h3>
-      <p>
-        Catálogo digital criado para apresentar produtos e facilitar
-        o contato dos clientes de forma prática pelo celular.
-      </p>
-    </div>
-  </article>
-
-</div>
-    </section>
-
-    <section class="servicos secao" id="servicos">
-      <div class="secao-cabecalho">
-        <p class="etiqueta">SERVIÇOS</p>
-        <h2>Sites feitos para o seu negócio crescer.</h2>
-      </div>
-
-      <div class="servicos-lista">
-        <article class="servico-card" data-servico="landing">
-    <button class="servico-toggle" type="button" aria-expanded="false">
-          <p class="servico-numero">01</p>
-    <h3>Landing pages</h3>
-    <p class="servico-resumo">
-      Página focada em apresentar uma oferta, serviço
-      ou campanha e transformar visitantes em contatos.
-    </p>
-    <span class="servico-seta" aria-hidden="true">+</span>
-  </button>
-
-  <div class="servico-detalhes">
-    <p class="servico-preco">A partir de R$ 800</p>
-
-    <h4>O que pode incluir</h4>
-    <ul>
-      <li>Layout personalizado e responsivo</li>
-      <li>Seções definidas conforme a oferta</li>
-      <li>Botões de WhatsApp e chamadas para ação</li>
-      <li>Formulário simples, quando necessário</li>
-    </ul>
-
-    <p class="servico-aviso">
-      Hospedagem, domínio, conteúdo e recursos extras
-      são avaliados conforme o projeto.
-    </p>
-
-    <a
-      class="botao botao-principal"
-      href="https://wa.me/55SEUNUMERO?text=Olá!%20Quero%20um%20orçamento%20para%20uma%20landing%20page."
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Solicitar orçamento
-    </a>
-  </div>
-</article>
-<article class="servico-card" data-servico="institucional">
-    <button class="servico-toggle" type="button" aria-expanded="false">
-          <p class="servico-numero">02</p>
-    <h3>Site Institucional</h3>
-    <p class="servico-resumo">
-     Home, serviços, sobre, contato, navegação, responsividade, botões de contato.
-    </p>
-    <span class="servico-seta" aria-hidden="true">+</span>
-  </button>
-
-  <div class="servico-detalhes">
-    <p class="servico-preco">A partir de R$ 1.500</p>
-
-    <h4>O que pode incluir</h4>
-    <ul>
-      <li>Layout personalizado e responsivo</li>
-      <li>Seções definidas conforme a oferta</li>
-      <li>Botões de WhatsApp e chamadas para ação</li>
-      <li>Formulário simples, quando necessário</li>
-    </ul>
-
-    <p class="servico-aviso">
-      Hospedagem, domínio, conteúdo e recursos extras
-      são avaliados conforme o projeto.
-    </p>
-
-    <a
-      class="botao botao-principal"
-      href="https://wa.me/55SEUNUMERO?text=Olá!%20Quero%20um%20orçamento%20para%20uma%20landing%20page."
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Solicitar orçamento
-    </a>
-  </div>
-</article>
-        <article class="servico-card" data-servico="catalogo">
-    <button class="servico-toggle" type="button" aria-expanded="false">
-          <p class="servico-numero">03</p>
-    <h3>Catálogo digital</h3>
-    <p class="servico-resumo">
-   Categorias/produtos combinados, visual mobile, páginas/detalhes de produto, contato por WhatsApp.
-    </p>
-    <span class="servico-seta" aria-hidden="true">+</span>
-  </button>
-
-  <div class="servico-detalhes">
-    <p class="servico-preco">A partir de R$2.000</p>
-
-    <h4>O que pode incluir</h4>
-    <ul>
-      <li>Layout personalizado e responsivo</li>
-      <li>Seções definidas conforme a oferta</li>
-      <li>Botões de WhatsApp e chamadas para ação</li>
-      <li>Formulário simples, quando necessário</li>
-    </ul>
-
-    <p class="servico-aviso">
-      Hospedagem, domínio, conteúdo e recursos extras
-      são avaliados conforme o projeto.
-    </p>
-
-    <a
-      class="botao botao-principal"
-      href="https://wa.me/55SEUNUMERO?text=Olá!%20Quero%20um%20orçamento%20para%20uma%20landing%20page."
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Solicitar orçamento<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <line x1="7" y1="17" x2="17" y2="7"></line>
-  <polyline points="7 7 17 7 17 17"></polyline>
-</svg>
-    </a>
-  </div>
-</article>
-      </div>
-
-      <a href="#contato" class="link-secao">
-        Solicitar orçamento <span aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <line x1="7" y1="17" x2="17" y2="7"></line>
-  <polyline points="7 7 17 7 17 17"></polyline>
-</svg></span>
-      </a>
-    </section>
-
+</section>
+    <!-- Sobre -->
     <section class="sobre secao" id="sobre">
       <div class="sobre-imagem">
         <img
-          src="basement office.webp"
+          src="sobre.jpg"
           alt="Caio Martins trabalhando no desenvolvimento de um site"
         >
       </div>
-
       <div class="sobre-conteudo">
         <p class="etiqueta">SOBRE MIM</p>
-
         <h2>
-          Design, código e atenção
-          ao que o seu negócio precisa.
+          Design, código e atenção ao que o seu negócio precisa.
         </h2>
-
         <p>
-          Sou Caio Martins, Web Designer e desenvolvedor web focado
-          em construir sites modernos, responsivos e fáceis de usar.
+          Sou Caio Martins, Web Designer e desenvolvedor por trás da Gran Rey Cero Studio.
+Crio landing pages, sites institucionais e catálogos digitais para pequenos negócios que precisam apresentar melhor seus serviços, transmitir confiança e facilitar o contato com novos clientes.
         </p>
-
         <p>
-          Meu objetivo é ajudar pequenos negócios a terem uma presença
-          profissional na internet, com páginas que comuniquem bem,
-          funcionem no celular e facilitem o contato com novos clientes.
+         Meu trabalho combina direção visual, estrutura de conteúdo e desenvolvimento responsivo. O objetivo não é apenas criar uma página bonita, mas construir uma presença digital clara, funcional e coerente com o negócio.
         </p>
-
         <a href="#contato" class="link-secao">
           Vamos conversar <span aria-hidden="true">↗</span>
         </a>
       </div>
     </section>
 
+    <!-- Contato -->
     <section class="contato secao" id="contato">
       <p class="etiqueta">CONTATO</p>
 
       <h2>
-        Seu próximo site<br>
-        pode começar aqui.
+        Vamos conversar,<br>
+        Seu próximo site começa com uma boa conversa.
       </h2>
 
       <p class="contato-descricao">
-        Tem uma ideia, precisa de um site ou quer melhorar sua presença online?
-        Me mande uma mensagem e vamos conversar.
+        Conte um pouco sobre o seu negócio, o que você precisa apresentar e qual resultado espera alcançar. A partir disso, podemos definir a melhor estrutura para o projeto.
       </p>
 
       <a
@@ -323,16 +583,29 @@
 
       <div class="contato-links">
         <a href="mailto:seuemail@email.com">E-mail</a>
-        <a href="https://github.com/caio1chigo" target="_blank" rel="noopener noreferrer">
+
+        <a
+          href="https://github.com/caio1chigo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           GitHub
         </a>
-        <a href="https://www.instagram.com/kiii0oo/" target="_blank" rel="noopener noreferrer">
-          Instagram
+
+        <a
+          href="https://www.instagram.com/kiii0oo/"
+          target="_blank"
+          rel="noopener noreferrer">Instagram
         </a>
       </div>
     </section>
   </main>
-
+<a
+  href="#inicio"
+  class="botao-topo"
+  aria-label="Voltar ao topo">
+  <span aria-hidden="true">↑</span>
+</a>
   <footer class="rodape">
     <p>© 2026 Caio Martins. Todos os direitos reservados.</p>
   </footer>
